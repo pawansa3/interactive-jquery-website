@@ -1,0 +1,93 @@
+html { height: 100%; }
+body {
+	font-family: monospace;
+	font-size: 18px;
+	min-height:100%;
+	position: relative;
+	z-index: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #ffffff;
+	font-weight: bolder;
+}
+
+.col-md-5 {	border: 2px solid #f0f0ff;padding: 10px; margin: 10px auto;box-shadow: 8px 8px 4px #ded7d7;}
+.col-md-5 > a {	display: block; background-color: #e415b0; }
+.dogcard_active{ background: #ebebeb; border: 2px solid #ebebeb; }
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #0a0a0a;
+	opacity: 0.8;
+	z-index: 1;	
+}
+.overlay_item_container {		
+	position: fixed;
+	z-index: 2;
+	display: flex;
+	height: 100vh;
+	width: 98vw;
+	justify-content: center;
+	align-items: center;
+	/*display: none;*/
+}
+.overlay_item {		
+	position: relative;
+	background: #fff;
+	padding: 20px;
+}
+.close_btn {		
+	position: absolute;
+	top: 0%;
+	left: 96%;
+	font-size: 25px;
+	line-height: 1;
+	cursor:pointer;
+}
+.close_btn:hover {
+	padding:1px;
+	font-weight: 900;
+}
+
+h1 { color: #e415b0; margin-top: 20px }
+img { width: inherit; cursor:pointer; }
+.logo{ height:100px;top: 0%;position: absolute;margin: auto;left: 30%;right: 30%; cursor:pointer;}
+.sbt {	display: block; background-color: #e415b0;	}
+.form {/*border: 0.2rem solid #f0f0f0;*/padding: 1.5rem; box-shadow: 4px 4px 4px 4px #ded7d7;}
+
+footer { position: absolute; width: 100%; bottom:-80px; padding:10px; background:#000; }
+.wb { color: #fff; margin: auto; text-align:center; }
+
+
+
+.logo_animation {
+	transform: rotate(360deg);
+	transition: 1s;
+}
+.logo_bounce {
+	/* transform:  */
+	animation-name: example;
+	animation-duration: 1s;
+}
+
+@keyframes example {
+  0%, 20%, 50%, 80%, 100% {top: 0%;}
+  40% {top: -4%;}
+  60% {top: -2%;}
+}
+
+.theme { cursor: pointer; background: #000; padding: 0 4px;}
+.theme_c { background: #fff; }
+.body_c {
+	background: #000;
+	color: #fff;
+}
+.form_dogcard_c {
+	box-shadow: 8px 8px 4px #423434;
+	border: 2px solid #423434;
+}
+
+.footer_c {
+	background: #e415b0;
+}
